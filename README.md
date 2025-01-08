@@ -29,6 +29,17 @@ This repository contains multiple mini projects that demonstrate different web d
     - Reset functionality and winner announcement
     - https://tic-tac-toe-xi-kohl.vercel.app/
 
+4. **Payment Form**
+   - A Basic payment form created using HTML & CSS only
+   - Only has the frontend of the form
+   - https://payment-form-pi.vercel.app/
+
+5. **ContactUs Form**
+   - A Basic Contact Us form
+   - Created only HTML & CSS
+   - Does contain media queries for mobile responsiveness
+   - https://contact-form-eight-blue.vercel.app/
+
 ## Project Structure
 
 The repository is organized with each project in its own directory:
