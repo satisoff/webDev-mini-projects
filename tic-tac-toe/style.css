@@ -9,7 +9,7 @@ body {
     margin: 0px auto;
     text-align: center;
     background-color: #686868;
-    background-image: url('../_resources/ticBack.jpg');
+    background-image: url('ticBack.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
