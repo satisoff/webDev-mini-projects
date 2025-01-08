@@ -12,6 +12,7 @@ This repository contains multiple mini projects that demonstrate different web d
     - Supports multiple currency pairs
     - Uses API to fetch latest exchange rates
     - Interactive user interface for easy conversion
+    - https://exchange-rate-sand.vercel.app/
 
 2. **Rock Paper Scissors**
 
@@ -19,12 +20,14 @@ This repository contains multiple mini projects that demonstrate different web d
     - Random computer move generation
     - Score tracking and result display
     - Interactive buttons and visual feedback
+    - https://rock-paper-scissors-eight-wheat.vercel.app/
 
 3. **Tic Tac Toe**
     - Two-player implementation of the classic game
     - Turn-based gameplay with X and O markers
     - Win detection and game state tracking
     - Reset functionality and winner announcement
+    - https://tic-tac-toe-xi-kohl.vercel.app/
 
 ## Project Structure
 
