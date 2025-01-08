@@ -7,22 +7,24 @@ A collection of small web development projects showcasing various HTML, CSS, and
 This repository contains multiple mini projects that demonstrate different web development concepts and techniques:
 
 1. **Currency Exchange Rate Converter**
-   - Real-time currency conversion tool
-   - Supports multiple currency pairs
-   - Uses API to fetch latest exchange rates
-   - Interactive user interface for easy conversion
+
+    - Real-time currency conversion tool
+    - Supports multiple currency pairs
+    - Uses API to fetch latest exchange rates
+    - Interactive user interface for easy conversion
 
 2. **Rock Paper Scissors**
-   - Classic game implementation where player faces the computer
-   - Random computer move generation
-   - Score tracking and result display
-   - Interactive buttons and visual feedback
+
+    - Classic game implementation where player faces the computer
+    - Random computer move generation
+    - Score tracking and result display
+    - Interactive buttons and visual feedback
 
 3. **Tic Tac Toe**
-   - Two-player implementation of the classic game
-   - Turn-based gameplay with X and O markers
-   - Win detection and game state tracking
-   - Reset functionality and winner announcement
+    - Two-player implementation of the classic game
+    - Turn-based gameplay with X and O markers
+    - Win detection and game state tracking
+    - Reset functionality and winner announcement
 
 ## Project Structure
 
@@ -37,15 +39,16 @@ Mini Projects/
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
+-   HTML5
+-   CSS3
+-   JavaScript
 
 ## Getting Started
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/yourusername/Mini-Projects.git
+git clone https://github.com/satisoff/webDev-mini-projects.git
 ```
 
 2. Navigate to any project folder
