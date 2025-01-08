@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Conv.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="page-title">
+            Currency Converter
+        </h1>
+        <p class="page-subtitle">
+            Check live foreign currecncy exchange rates
+        </p>
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="">
+                <div class="top-row">
+                    <div class="from-box">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="" class="from-img">
+                        <select name="from" class="from-cont">
+                        </select>
+                    </div>
+
+                    <div class="reverse-btn-box">
+                        <button class="reverse-btn">
+                            <img src="../_resources/swap.jpeg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="to-box">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="" class="to-img">
+                        <select name="to" id="" class="to-cont">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bottom-row">
+                    <div class="from-amount-box">
+                        <fieldset class="from-amount">
+                            <legend class="from-cont-title">INR</legend>
+                            <input type="amount" class="amount-input">
+                        </fieldset>
+                    </div>
+
+                    <div class="to-amount-box">
+                        <fieldset class="to-amount">
+                            <legend class="to-cont-title">USD</legend>
+                            <div class="result-text"></div>
+                        </fieldset>
+                    </div>
+
+                    <div class="submit-btn-box">
+                        <button class="submit" type="submit">
+                            Calculate
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    max-width: 800px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: #686868;
+    background-image: url('../_resources/ticBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    padding: 40px 20px;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 10px white;
+}
+h2 {
+    font-size: 2rem;
+    margin: 30px auto;
+}
+
+.container {
+    position: relative;
+    background-color: #c2aff0;
+    width: 100%;
+    height: 100vh;
+    background: none;
+}
+
+.box {
+    margin: 20px auto;
+    padding: 30px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    height: 55%;
+    width: 55%;
+}
+
+.cells {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 2.8rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3),  -2px -2px 10px rgba(0, 0, 0, 0.3);
+    color: #322f4f;
+}
+
+.reset {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 14px;
+    background-color: #457eac;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.newGame {
+    font-size: 3rem;
+    margin: 45px auto 0px auto;
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 5px;
+    color: #464646;
+}
+
+.new-game {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    background-color: #457eac;
+    height: 16em;
+    width: 20em;
+    border-radius: 20px;
+    display: none;
+}
+
+.cross-icon {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
