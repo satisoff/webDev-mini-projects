@@ -131,6 +131,14 @@
         text-align: center;
         outline: none;
     }
+
+    .footer {
+        text-align: center;
+        background-color: #bb9bb0;
+    }
+    .copyright > a{
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 767px) {
