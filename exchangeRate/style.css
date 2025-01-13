@@ -180,14 +180,13 @@
         display: flex;
         justify-content: center;
         padding-top: 4rem;
-        height: 100vmax;
+        height: 45rem;
         background-color: #bb9bb0;
     }
 
     .container {
         display: grid;
-        height: 75%;
-        max-width: 80%;
+        height: 35rem;
         padding: 2rem 2rem;
         border-radius: 20px;
         background-color: #fff;
