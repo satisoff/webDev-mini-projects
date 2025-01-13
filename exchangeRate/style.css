@@ -178,7 +178,7 @@
 
     .container {
         display: grid;
-        max-height: 60%;
+        height: 75%;
         max-width: 80%;
         padding: 2rem 2rem;
         border-radius: 20px;
@@ -272,6 +272,14 @@
         background-color: #ccbcbc;
         color: #1c1d21;
         font-weight: 700;
+    }
+
+    .footer {
+        text-align: center;
+        background-color: #bb9bb0;
+    }
+    .copyright > a{
+        text-decoration: none;
     }
 }
 
