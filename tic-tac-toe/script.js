@@ -20,6 +20,7 @@ newGamebtn.addEventListener('click', () => {
     winner.innerText = "";
     turn='p1';
     newGame.style.display = 'none';
+    reset.style.display = "block";
 })
 
 //selecting winner text
@@ -53,13 +54,11 @@ function taskDo() {
 
     if (checkWinner()=='p1') {
         winner.innerText ="Player 1 (X)\nWon";
-        newGame.style.display = 'block';
         boxes.forEach((val) => {
            val.disabled = 'true';
         })
     } else if (checkWinner()==='p2') {
         winner.innerText ="Player 2 (O)\nWon";
-        newGame.style.display = 'block';
         boxes.forEach((val) => {
             val.disabled = 'true';
         })
@@ -71,6 +70,8 @@ function taskDo() {
         newGame.style.display = 'block';
         winner.innerText = "Game Tied";
     }
+    newGame.style.display = 'block';
+    reset.style.display = "none";
 }
 
 boxes.forEach((val) => {
