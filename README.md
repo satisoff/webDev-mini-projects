@@ -39,6 +39,12 @@ This repository contains multiple mini projects that demonstrate different web d
    - Created only HTML & CSS
    - Does contain media queries for mobile responsiveness
    - https://contact-form-eight-blue.vercel.app/
+  
+6. **Weather Portal**
+    - Displays current temperature for a specified city
+    - Fetches weather data from the [wttr.in](https://wttr.in) API
+    - Responsive design that adapts to different screen sizes
+    - https://weather-portal-woad.vercel.app/
 
 ## Project Structure
 
