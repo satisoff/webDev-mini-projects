@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="shortcut icon" href="resources/clock.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>
+            The 3 Clocks
+        </h1>
+    </nav>
+    <div class="container">
+        <main>
+            <header>
+                <img src="resources/clockImg.svg" alt="Clock image" class="clock-img">
+                <img src="resources/stopwatch.png" alt="StopWatch" class="stopwatch-img">
+                <img src="resources/timer.png" alt="Timer" class="timer-img">
+            </header>
+
+            <section class="time-sec">
+                <h3 class="curTime">
+                    13:00:00
+                </h3>
+                <audio src="resources/timerSound.mp3" class="clockTick"></audio>
+            </section>
+
+            <section class="timer-sec">
+                <div class="timer-sec-container">
+                    <h3 class="timerTime">
+                        00:00:00
+                    </h3>
+                    <div class="choose-time">
+                        <select name="hour-opt" id="hour-opt" class="hour-opt" title="Hour">
+                            <option value="0">0hr</option>
+                        </select>
+                        <select name="min-opt" id="min-opt" class="min-opt" title="Min">
+                            <option value="0">0min</option>
+                        </select>
+                        <select name="" id="sec-opt" class="sec-opt" title="Sec">
+                            <option value="0">0s</option>
+                        </select>
+                    </div>                    
+                    <button class="start-timer">
+                        Start
+                    </button>
+                </div>
+                <audio src="resources/timerSound.mp3" class="timerSound"></audio>
+                <audio src="resources/timerEnd.mp3" class="timerEnd"></audio>
+            </section>
+
+            <section class="stopwatch-sec">
+                <div class="stopwatch-sec-container">
+                    <h3 class="stopwatchTime" title="HH:MM:SS:mm">
+                        00:00:00:00
+                    </h3>
+                    <div class="stopwatch-btns">
+                        <button class="stopwatch-start">Start</button>
+                        <button class="stopwatch-stop">Stop</button>
+                        <button id="stopwatch-reset">Reset</button>
+                    </div>
+                </div>
+                <audio src="resources/stopwatchSound.mp3" class="stopwatchSound"></audio>
+            </section>
+
+            <div class="sound-icon">
+                <img src="resources/soundDisabled.webp" alt="Sound icon" class="sound-img">
+            </div>
+        </main>
+    
+    </div>
+
+    <footer class="footer">
+        <p class="copyright">
+            &copy; <a href="https://github.com/satisoff" target="_blank">satisoff</a>
+        </p>
+    </footer>
+
+    <audio src="resources/screenTap.mp3" class="screenTap"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
