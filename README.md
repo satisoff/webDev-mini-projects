@@ -45,6 +45,17 @@ This repository contains multiple mini projects that demonstrate different web d
     - Fetches weather data from the [wttr.in](https://wttr.in) API
     - Responsive design that adapts to different screen sizes
     - https://weather-portal-woad.vercel.app/
+  
+7. **Three Clocks**
+    - A comprehensive application featuring three different timekeeping tools: Clock, Stopwatch, and Timer
+    - Real-time clock display with current time updates every second
+    - Fully functional stopwatch with start, stop, and reset capabilities
+    - Timer with customizable time settings and start functionality
+    - Interactive user interface with visual feedback and animations
+    - Sound effects for button interactions and timer alerts
+    - Mute functionality to toggle sound effects on and off
+    - Responsive design ensuring usability across various devices
+    - https://three-clocks.vercel.app/
 
 ## Project Structure
 
