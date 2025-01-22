@@ -57,6 +57,12 @@ This repository contains multiple mini projects that demonstrate different web d
     - Responsive design ensuring usability across various devices
     - https://three-clocks.vercel.app/
 
+8. **Calculator**
+    - A basic calculator with addition, subtraction, multiplication, and division functionalities
+    - Interactive buttons and display
+    - Responsive design for different screen sizes
+    - https://calculator-ruby-kappa-23.vercel.app/
+
 ## Project Structure
 
 The repository is organized with each project in its own directory:
