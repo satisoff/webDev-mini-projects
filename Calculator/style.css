@@ -1,0 +1,202 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #0b477475;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 27%;
+        height: 95%;
+        border-radius: 20px;
+        padding: 1.5rem;
+        background-color: #021526;
+        box-shadow: 1px 1px 15px #021526, -1px -1px 15px #021526;
+    }
+
+    .display {
+        height: 26%;
+        width: 100%;
+        background-color: inherit;
+        border-radius: 10px;
+        position: relative;
+        margin: 0 0 0.5rem;
+        border: 1px solid transparent;
+    }
+    @keyframes borderBlink {
+        0% {
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        50% {
+            border-color: rgba(255, 255, 255, 0.65);
+        }
+        100% {
+            border-color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    .display-digits {
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        height: 75%;
+        width: 90%;
+        text-align: right;
+        font-size: 2.4rem;
+        color: #fff;
+        overflow: hidden;
+    }
+    .pre-text {
+        font-size: 1.9rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .buttons {
+        margin: 1.3rem 0 0;
+        height: 70%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 0.8rem;
+        row-gap: 0.5rem;
+        background-color: inherit;
+    }
+    .buttons button {
+        border-radius: 50%;
+        text-align: center;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fff;
+        border: none;
+        transition: transform 0.2s ease-in-out;
+    }
+    #all-clear {
+        font-size: 1.8rem;
+    }
+    .gray-buttons {
+        background-color: #5c5c5f;
+    }
+    .orange-buttons {
+        background-color: #ff9f0a;
+    }
+    .dark-gray-buttons {
+        background-color: #2a2a2c;
+    }
+    .buttons button:hover {
+        border: 1px solid white;
+        transform: scale(1.1);
+    }
+
+    #backspace {
+        background-image: url("backArrow.png");
+        object-fit: cover;
+        background-repeat: no-repeat;
+        color: white;
+        background-position: 0.6rem 0.55rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #0b477475;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 95%;
+        height: 80%;
+        border-radius: 20px;
+        padding: 1.5rem;
+        background-color: #021526;
+        box-shadow: 1px 1px 15px #021526, -1px -1px 15px #021526;
+    }
+
+    .display {
+        height: 26%;
+        width: 100%;
+        background-color: inherit;
+        border-radius: 10px;
+        position: relative;
+        margin: 0 0 0.5rem;
+    }
+
+    .display-digits {
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        height: 75%;
+        max-width: 93%;
+        text-align: right;
+        font-size: 2.4rem;
+        color: #fff;
+        overflow: hidden;
+    }
+    .pre-text {
+        font-size: 1.9rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .buttons {
+        margin: 1.5rem 0 0;
+        height: 67%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 0.8rem;
+        row-gap: 0.5rem;
+        background-color: inherit;
+    }
+    .buttons button {
+        border-radius: 50%;
+        text-align: center;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fff;
+        border: none;
+        transition: transform 0.1s ease-in-out;
+    }
+    #all-clear {
+        font-size: 1.8rem;
+    }
+    .gray-buttons {
+        background-color: #5c5c5f;
+    }
+    .orange-buttons {
+        background-color: #ff9f0a;
+    }
+    .dark-gray-buttons {
+        background-color: #2a2a2c;
+    }
+    .buttons button:hover {
+        transform: scale(0.9);
+    }
+
+    #backspace {
+        background-image: url("backArrow.png");
+        object-fit: cover;
+        background-repeat: no-repeat;
+        color: white;
+        background-position: 0.4rem 0.5rem;
+    }
+}
