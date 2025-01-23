@@ -9,6 +9,8 @@ const operators = document.querySelectorAll(".operator");
 const equalsTo = document.querySelector("#equals");
 
 const BASEurl = "https://api.mathjs.org/v4/?expr=2*3";
+const themeBtn = document.querySelector("#calc");
+const container = document.querySelector(".container");
 
 //Reflecting digits in the display
 numbers.forEach(number => {
@@ -23,9 +25,6 @@ numbers.forEach(number => {
 //Reflecting operators in the display
 operators.forEach(operator => {
     operator.addEventListener('click', ()=> {
-        if ((postText.innerText).endsWith('0') && operator.value=='/') {
-            return;
-        }
         postText.innerText+=operator.value;
     })
 })
@@ -37,7 +36,12 @@ allClear.addEventListener('click', () => {
 
 async function doIt(expression) {
     let response = await fetch(`https://api.mathjs.org/v4/?expr=${expression}`);
-    let result = await response.json();
+    let result;
+    try {
+        result = await response.json();
+    } catch (error) {           //Handle Division by zero
+        result = "Infinity";
+    }
     preText.innerText = postText.innerText;
     postText.innerText = result;
 }
@@ -56,5 +60,24 @@ equalsTo.addEventListener("click", () => {
 backspace.addEventListener('click', () => {
     if (!(postText.innerText=='0')) {
         postText.innerText = (postText.innerText).slice(0,(postText.innerText).length-1);
+    }
+})
+
+//Set default theme black
+localStorage.setItem("theme", "black");
+
+themeBtn.addEventListener("click", ()=> {
+    if (localStorage.getItem("theme")=="black") {
+        localStorage.setItem("theme", "white");
+        container.style.backgroundColor = "#fff";
+        preText.style.color = "rgba(0, 0, 0, 0.7)"
+        postText.style.color = "#000";
+        themeBtn.style.backgroundImage = 'url("resources/lightMode.png")';
+    } else {
+        localStorage.setItem("theme", "black");
+        container.style.backgroundColor = "#021526";
+        preText.style.color = "rgba(255, 255, 255, 0.7)"
+        postText.style.color = "#fff";
+        themeBtn.style.backgroundImage = 'url("resources/darkMode.png")';
     }
 })
