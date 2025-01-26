@@ -63,6 +63,13 @@ This repository contains multiple mini projects that demonstrate different web d
     - Responsive design for different screen sizes
     - https://calculator-ruby-kappa-23.vercel.app/
 
+9. **Login Form**
+    - A responsive login form with username and password fields
+    - Password visibility toggle feature
+    - Interactive buttons for logging in with Google and GitHub
+    - Custom styling with modern fonts and colors
+    - https://login-form-example.vercel.app/
+    
 ## Project Structure
 
 The repository is organized with each project in its own directory:
