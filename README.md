@@ -68,8 +68,8 @@ This repository contains multiple mini projects that demonstrate different web d
     - Password visibility toggle feature
     - Interactive buttons for logging in with Google and GitHub
     - Custom styling with modern fonts and colors
-    - https://login-form-example.vercel.app/
-    
+    - https://login-page-omega-rose.vercel.app/
+
 ## Project Structure
 
 The repository is organized with each project in its own directory:
