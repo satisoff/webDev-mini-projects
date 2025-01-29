@@ -41,20 +41,39 @@
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         margin: 1.25rem 0;
+        cursor: text;
     }
     
-    .input-title {
+    .username-box,
+    .password-box {
+        height: 50%;
+    }
+    .username-box {
+        position: relative;
+    }
+    .input-title-final {
         font-size: 1.3rem;
         margin-left: 0.3rem;
         margin-bottom: 0.2rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+    .input-title-initial {
+        font-size: 1rem;
+        position: relative;
+        top: 50%;
+        left: 4%;
+        transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
     }
     
     .form-box input {
         width: 100%;
-        height: 48%;
-        border-radius: 5px;
-        background: #ffffffcc;
-        border: none;
+        height: 80%;
+        background: transparent;
+        border-color: transparent;
+        border-bottom: 1px solid black;
         color: #114B5F;
         padding-left: 0.8rem;
         font-size: 1rem;
@@ -71,6 +90,7 @@
         height: 1.1rem;
         right: 0.5rem;
         top: 2.5rem;
+        cursor: pointer;
         display: none;
     }
 
@@ -121,7 +141,7 @@
         border-radius: 1px;
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        transition: border-radius 0.3s ease-in-out;
+        transition: border-radius 0.3s ease-in-out, transform 0.1s ease-in-out;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 }
@@ -136,17 +156,17 @@
     body {
         width: 100vw;
         height: 100vh;
-        background: linear-gradient(45deg, #2c3e50, #3498db);
-        color: #fff;
+        background-image: linear-gradient(45deg, #A18276, #AAC0AA);
+        color: #736372;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .container {
-        height: 75%;
-        width: 50%;
-        background: rgba(255, 255, 255, 0.1);
+        height: 30rem;
+        width: 20rem;
+        background: #dceed134;
         border-radius: 15px;
         box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
         border: 1px solid rgba(255, 255, 255, 0.18);
@@ -157,50 +177,97 @@
     }
 
     .title-box {
-        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        font-size: 2rem;
     }
 
     .form-box {
-        height: 100%;
+        height: 95%;
         width: 100%;
         text-align: left;
         display: grid;
         grid-template-rows: repeat(3, 1fr);
-        margin: 0.5rem 0;
+        margin: 1.8rem 0 0.5rem;
+        cursor: text;
     }
     
-    .input-title {
+    .username-box,
+    .password-box {
+        height: 50%;
+        position: relative;
+    }
+    .input-title-final {
+        font-size: 1.3rem;
+        margin-left: 0.3rem;
+        margin-bottom: 0.2rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+    .input-title-initial {
         font-size: 1rem;
+        position: relative;
+        top: 50%;
+        left: 4%;
+        transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
     }
     
     .form-box input {
-        width: 85%;
-        height: 50%;
-        border-radius: 5px;
-        background: inherit;
-        border-width: 1px;
-        margin: 0.3rem 0;
+        width: 95%;
+        height: 80%;
+        background: transparent;
+        border-color: transparent;
+        border-bottom: 1px solid black;
+        color: #114B5F;
         padding-left: 0.8rem;
         font-size: 1rem;
-        color: #fff;
+        outline: none;
     }
     .form-box > div {
         margin-left: 0.5rem;
     }
-
-    #submit {
-        height: 55%;
-        width: 60%;
-        justify-self: center;
-        margin: 0.5rem 0;
-        font-size: 1.5rem;
-        border-radius: 5px;
-        border-width: 1px;
-        color: white;
-        background: transparent;
+    
+    .eye {
+        position: absolute;
+        height: 1.1rem;
+        right: 1.4rem;
+        top: 2.5rem;
         cursor: pointer;
+        display: none;
     }
 
+    #submit {
+        height: 52%;
+        width: 60%;
+        justify-self: center;
+        font-size: 1.5rem;
+        border-radius: 50px;
+        border-width: 1px;
+        background: transparent;
+        cursor: pointer;
+        font-family: cursive;
+        font-weight: bold;
+        color: #000000c7;
+        transition: font-size 0.2s ease-in-out 0.1s;
+    }
+    #submit:hover {
+        font-size: 1.7rem;
+    }
+    #submit:not(:hover) {
+        font-size: 1.5rem;
+    }
+
+    .other-box button div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        align-self: center;
+        margin-left: 0.7rem;
+    }
+    .other-box button img {
+        height: 1.5rem;
+    }
     .other-box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -211,10 +278,15 @@
         height: 80%;
         align-self: center;
         justify-self: center;
+        display: flex;
         cursor: pointer;
-        background: transparent;
-        border-radius: 5px;
-        color: #fff;
+        background: #736372;
+        color: #E4FDE1;
+        border-width: 1px;
+        border-radius: 1px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: border-radius 0.3s ease-in-out, transform 0.1s ease-in-out;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    
 }
