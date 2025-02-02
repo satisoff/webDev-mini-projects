@@ -89,9 +89,6 @@
         background-color: transparent;
         color: #fff;
     }
-    .curCity::placeholder {
-        color: #fff;
-    }
 
     footer {
         display: none;
@@ -196,9 +193,6 @@
         background-color: transparent;
         color: #fff;
     }
-    .curCity::placeholder {
-        color: #fff;
-    }   
 
     .footer {
         text-align: center;

@@ -11,8 +11,27 @@ const sunriseTxt = document.querySelector(".cur-sunrise");
 const sunsetTxt = document.querySelector(".cur-sunset");
 
 let curCity = "Mumbai";
+let curLong;
+let curLat;
+
+// Ask user for location
+navigator.geolocation.getCurrentPosition(
+    (suc) => {
+        curLong = suc.coords.longitude;
+        curLat = suc.coords.latitude;
+        (async () => {
+            let newURL = `https://nominatim.openstreetmap.org/reverse?lat=${curLat}&lon=${curLong}&format=json`;
+            let data = await fetch(newURL);
+            let response = await data.json();
+            curCity = response.address.city;            //Ghaziabad
+        })();
+}, (err) => {
+        curCity = "Mumbai";
+        getData();
+})
 
 let BASEURL = "https://wttr.in/Mumbai?format=j1";
+let BASEURL2 = "https://nominatim.openstreetmap.org/reverse?lat=28.7342666&lon=77.5099787&format=json";
 
 const getData = async () => {
     if (inpt.value) {
@@ -45,6 +64,9 @@ const getData = async () => {
     //Get Sunset
     let sunset = response.weather[0].astronomy[0].sunset;
     sunsetTxt.innerText = sunset;
+    // Reset the placeholder & the value
+    inpt.placeholder = curCity;
+    inpt.value = "";
 }
 
 btn.addEventListener("click", getData);
