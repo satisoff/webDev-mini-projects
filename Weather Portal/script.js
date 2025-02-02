@@ -10,7 +10,7 @@ const visibilityTxt = document.querySelector(".cur-visibility");
 const sunriseTxt = document.querySelector(".cur-sunrise");
 const sunsetTxt = document.querySelector(".cur-sunset");
 
-let curCity = "Mumbai";
+let curCity;
 let curLong;
 let curLat;
 
@@ -23,7 +23,7 @@ navigator.geolocation.getCurrentPosition(
             let newURL = `https://nominatim.openstreetmap.org/reverse?lat=${curLat}&lon=${curLong}&format=json`;
             let data = await fetch(newURL);
             let response = await data.json();
-            curCity = response.address.city;            //Ghaziabad
+            localStorage.setItem("curCity", response.address.city);         //store locally
         })();
 }, (err) => {
         curCity = "Mumbai";
@@ -31,6 +31,12 @@ navigator.geolocation.getCurrentPosition(
 
 let BASEURL = "https://wttr.in/Mumbai?format=j1";
 let BASEURL2 = "https://nominatim.openstreetmap.org/reverse?lat=28.7342666&lon=77.5099787&format=json";
+
+try {
+    curCity = localStorage.getItem("curCity");
+} catch (e) {
+    curCity = "Mumbai";
+}
 
 const getData = async () => {
     if (inpt.value) {
