@@ -27,7 +27,6 @@ navigator.geolocation.getCurrentPosition(
         })();
 }, (err) => {
         curCity = "Mumbai";
-        getData();
 })
 
 let BASEURL = "https://wttr.in/Mumbai?format=j1";
@@ -69,6 +68,7 @@ const getData = async () => {
     inpt.value = "";
 }
 
+getData();                  //first execution
 btn.addEventListener("click", getData);
 inpt.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
