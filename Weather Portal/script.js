@@ -32,11 +32,7 @@ navigator.geolocation.getCurrentPosition(
 let BASEURL = "https://wttr.in/Mumbai?format=j1";
 let BASEURL2 = "https://nominatim.openstreetmap.org/reverse?lat=28.7342666&lon=77.5099787&format=json";
 
-try {
-    curCity = localStorage.getItem("curCity");
-} catch (e) {
-    curCity = "Mumbai";
-}
+curCity = !localStorage.getItem("curCity") ? "Mumbai" : localStorage.getItem('curCity');
 
 const getData = async () => {
     if (inpt.value) {
