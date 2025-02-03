@@ -70,6 +70,13 @@ This repository contains multiple mini projects that demonstrate different web d
     - Custom styling with modern fonts and colors
     - https://login-page-omega-rose.vercel.app/
 
+10. **Image Slider**
+    - Allows users to upload multiple images
+    - Manual navigation through images using buttons or keyboard arrow keys
+    - Auto-slide feature to automatically transition through images every 3 seconds
+    - Responsive design for different screen sizes
+    - https://image-slider-demo-link.vercel.app/
+
 ## Project Structure
 
 The repository is organized with each project in its own directory:

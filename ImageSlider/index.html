@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resources/imageSlider.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            Image Slider
+        </h1>
+        <div class="auto-slide">
+            <input type="checkbox" name="autoslide" id="autoslide">
+            <label for="autoslide">Auto Slide</label>
+        </div>
+    </header>
+    <main>
+        <div class="container-fetch-image">
+            <div class="fetch-image-box">
+                <div class="selectingImg">
+                    <label class="choose-title" for="images">Choose Images here</label>
+                    <input type="file" name="Image" id="images" accept="image/*" multiple>    
+                </div>       
+                <div class="middleware">
+                    <p></p>
+                </div>                     
+                <button id="startBtn">Start</button>
+            </div>
+        </div>
+
+        <div class="container-slide-image slide-1">
+            <img src="resources/backImg.png" alt="Back button" class="action-buttons" id="action-left">
+            <div class="image-box">
+                <img src="" alt="" srcset="" id="slide-1-img">
+            </div>
+            <img src="resources/forwardImg.png" alt="Forward button" class="action-buttons" id="action-right">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
