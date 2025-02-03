@@ -75,7 +75,7 @@ This repository contains multiple mini projects that demonstrate different web d
     - Manual navigation through images using buttons or keyboard arrow keys
     - Auto-slide feature to automatically transition through images every 3 seconds
     - Responsive design for different screen sizes
-    - https://image-slider-demo-link.vercel.app/
+    - https://image-slider-ashen-five.vercel.app/
 
 ## Project Structure
 
