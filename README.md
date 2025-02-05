@@ -77,14 +77,6 @@ This repository contains multiple mini projects that demonstrate different web d
     - Responsive design for different screen sizes
     - https://image-slider-ashen-five.vercel.app/
 
-11. **To-Do List**
-    - A simple and interactive to-do list application
-    - Add and remove tasks with ease
-    - Search functionality to filter tasks
-    - Tasks are saved in local storage for persistence
-    - Responsive design for different screen sizes
-    - https://to-do-list-demo-link.vercel.app/
-
 ## Project Structure
 
 The repository is organized with each project in its own directory:
