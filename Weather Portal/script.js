@@ -9,6 +9,8 @@ const windSpeedTxt = document.querySelector(".cur-windSpeed");
 const visibilityTxt = document.querySelector(".cur-visibility");
 const sunriseTxt = document.querySelector(".cur-sunrise");
 const sunsetTxt = document.querySelector(".cur-sunset");
+const obvDateTxt = document.getElementById("date-of-obv");
+const obvTimeTxt = document.getElementById("time-of-obv");
 
 let curCity;
 let curLong;
@@ -41,6 +43,12 @@ const getData = async () => {
     let newURL = `https://wttr.in/${curCity}?format=j1`;
     let data = await fetch(newURL);
     let response = await data.json();
+    // Get Obv Date & Time
+    let completeDate = response.current_condition[0].localObsDateTime.split(" ");
+    let obvDate = completeDate[0];
+    obvDateTxt.innerText = obvDate;
+    let obvTime = `${completeDate[1]} ${completeDate[2]}`;
+    obvTimeTxt.innerText = obvTime;
     //Get Temperature
     let curWeather = response.current_condition[0].temp_C;
     weather.innerText = `${curWeather}°C`;
